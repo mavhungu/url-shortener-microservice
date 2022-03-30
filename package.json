@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "body-parser": "^1.19.2",
     "cors": "^2.8.5",
@@ -8,5 +9,36 @@
     "mongodb": "^4.4.1",
     "mongoose": "^6.2.9",
     "valid-url": "^1.0.9"
+=======
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "description": "Url Shortener Microservice",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js -e js,hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavhungu/url-shortener-microservice.git"
+  },
+  "keywords": [],
+  "author": "Mavhungu Ronewa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavhungu/url-shortener-microservice/issues"
+  },
+  "homepage": "https://github.com/mavhungu/url-shortener-microservice#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+>>>>>>> 7271604d3a1b12c08f6c59294580be2bed13692c
   }
 }

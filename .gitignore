@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 .env
 /node_modules
 node_modules
+=======
+node_modules/
+.env
+.ideas
+.vscode
+>>>>>>> 7271604d3a1b12c08f6c59294580be2bed13692c
