@@ -1,7 +1,8 @@
 const validUrl = require('valid-url');
 const Shorturl = require('../models/shorturl')
+
 const Error = (res) => res.json({ error: 'invalid url' });
-const Successfull = (res, { original_url, short_url }) => res.render("index",{ original_url, short_url });
+const Successfull = (res, { original_url, short_url }) => res.json({ original_url, short_url });
 const Redirect = (res, location) =>  res.redirect(location);
 const getAllShorturl = async() => await Shorturl.find();
 const getShorturlByOriginalUrl = async(original_url) => await Shorturl.find({ original_url });
