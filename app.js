@@ -7,8 +7,7 @@ const hbs = require('hbs')
 const port = process.env.PORT || 3000
 
 const home = require('./router/home')
-const timestampRouter =  require('./router/timestamp.router')
-const timestampDateRouter = require('./router/timestampdateRouter')
+const ShorturlRouter = require('./router/shorturl')
 
 app.set('view engine', 'hbs')
 app.set('views',path.join(__dirname,'templates/views'))
@@ -19,8 +18,8 @@ app.use(express.urlencoded({extended: false}))
 app.use(express.static(path.join(__dirname,'public')))
 
 app.get('/',home)
-app.post('/api/shorturl', loggerMiddleware, postShorturlHandler)
-app.get('/api/shorturl/:short_url', loggerMiddleware, getShorturlByCodeHandler)
+app.post('/api/shorturl', ShorturlRouter)
+
 
 app.get('*', (req, res) => {
   res.status(404).send('Not found');
