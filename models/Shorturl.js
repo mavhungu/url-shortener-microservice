@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+
 const {Schema} = mongoose;
 
 const shorurlSchema = new Schema({
@@ -11,5 +12,6 @@ const shorurlSchema = new Schema({
       required: true
     }
   })
+
   
   module.exports = mongoose.model('Shorturl', shorurlSchema);
